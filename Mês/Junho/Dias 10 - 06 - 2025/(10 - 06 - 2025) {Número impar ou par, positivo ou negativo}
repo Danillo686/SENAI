@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numb, par
+
+        numb = Number(prompt("Escolha um número"))
+        if (numb % 2 == 0 && numb > 0){
+            alert ("Seu número é par e é positivo")
+        }else if (numb % 2 != 0 && numb > 0){
+            alert ("Seu número é ímpar e é positivo")
+        }else if (numb % 2 == 0 && numb < 0){
+            alert ("Seu número é par e é negativo")
+        }else if (numb % 2 != 0 && numb < 0){
+            alert ("Seu numero é ímpar e é negativo")
+        }
+
+    </script>
+</body>
+</html>
