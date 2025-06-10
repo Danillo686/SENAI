@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var aluno = prompt("Nome do aluno:  ")
+        var nota1 = Number(prompt("Primeira Nota:  "))
+        var nota2 = Number(prompt("Segunda Nota:  "))
+
+        var media = (nota1 + nota2) / 2
+
+        if (media >= 7 ){
+            alert (`Sua media foi de ${media}, você passou!`)
+        }else if (media < 7 && media >= 4){
+            alert (`Sua media foi de ${media}, você está de recuperação.`)
+        }else if (media < 4 && media >= 0){
+            alert (`Sua media foi de ${media}, você esta de recuperação. . . . . . . . . . . burro`)
+        }else{
+            alert("Nota errada, Verifique a nota novamente")
+        }
+    </script>
+</body>
+</html>
