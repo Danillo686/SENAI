@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var salario
+
+        salario = Number(prompt("Digite aqui seu salario:  "))
+
+        if (salario >= 0 && salario <= 200){
+            alert ("Nenhum crédito")
+        }else if (salario >= 201 && salario <= 400){
+            alert ("Saldo médio de 20%")
+        }else if (salario >= 401 && salario <= 600){
+            alert ("Saldo médio de 30%")
+        }else if (salario >= 601){
+            alert ("Saldo médio de 40%")
+        }
+
+    </script>
+</body>
+</html>
