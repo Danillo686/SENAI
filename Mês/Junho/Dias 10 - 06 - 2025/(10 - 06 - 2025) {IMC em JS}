@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var altura, peso, resultado
+
+        altura = Number(prompt("Qual a sua altura?"))
+        altura = altura ** 2
+        peso = Number(prompt("Qual o seu peso?"))
+        resultado = peso / altura
+
+        alert (`Seu IMC equivale à ${resultado}`)
+
+        if (resultado > 40){
+            alert (`IMC (${resultado}), Obesidade III`)
+        }else if (resultado < 39,9 && resultado >= 35){
+            alert (`IMC (${resultado}). Obesidade II`)
+        }else if (resultado < 34,9 && resultado >= 30){
+            alert (`IMC (${resultado}), Obesidade I`)
+        }else if (resultado < 29,9 && resultado >= 25){
+            alert (`IMC (${resultado}), Acima do Peso`)
+        }else if (resultado <= 24,9 && resultado >= 18,5){
+            alert (`IMC (${resultado}), Peso Normal`)
+        }else if (resultado < 18,5){
+            alert(`IMC (${resultado}), Abaixo do peso`)
+        }
+    </script>
+</body>
