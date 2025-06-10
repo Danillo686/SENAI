@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var idade 
+
+        idade = Number(prompt("Coloque sua idade"))
+        if (idade < 5){
+            alert (`Idade (${idade}), Desculpe, não há categorias pra você `)
+        }
+        else if (idade >= 5 && idade <= 7){
+            alert (`Idade (${idade}), Infantil 5 - 7 Anos`)
+        }else if (idade >= 8 && idade <= 10){
+            alert (`Idade (${idade}), Infantil 8 - 10 Anos`)
+        }else if (idade >= 11 && idade <= 13){
+            alert (`Idade (${idade}), Juvenil 11 - 13 Anos`)
+        }else if (idade >= 14 && idade <= 17){
+            alert (`Idade (${idade}), Juvenil 14 - 17 anos`)
+        }else{
+            alert (`Idade (${idade}), Adulto 18 anos pra cima`)
+        }
+    </script>
+</body>
+</html>
