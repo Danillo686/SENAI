@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1, n2, n3, result, resultFinal
+
+        n1 = Number(prompt("Digite aqui a primeira nota  "))
+        n2 = Number(prompt("Digite aqui a segunda nota  "))
+        n3 = Number(prompt("Digite aqui a terceira nota   "))
+
+        n1 = n1 * 3
+        n2 = n2 * 3 
+        n3 = n3 * 4
+
+        result = n1 + n2 + n3
+        resultFinal = result / 10
+
+        alert ("Aqui seu resultado " + resultFinal)
+    </script>
+</body>
+</html>
