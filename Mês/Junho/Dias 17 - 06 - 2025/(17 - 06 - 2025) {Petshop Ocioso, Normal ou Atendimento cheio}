@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dogs, resp
+
+        dogs = Number(prompt("Quantos cachorros você atendeu hoje?"))
+
+        if (dogs < 20){
+
+            alert ("O petshop ficou Ocioso")
+            resp = "Ocioso"
+
+        }else if (dogs >= 20 && dogs <= 30){
+
+            alert (`O petshop segue normalmente`)
+            resp = "Normal"
+
+        }else if (dogs > 31){
+
+            alert ("O cliente foi até a loja, porém não pode ser atendido :(")
+            resp = "com Alta Demanda de pedidos"
+            
+        }
+
+        alert (`O petshop atendeu no total ${dogs} cães, e o petshop está ${resp}`)
+    </script>
+</body>
+</html>
