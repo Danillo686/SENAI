@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var idadeHomem1, idadeHomem2, idadeMulher1, idadeMulher2, HomemVelho, HomemNovo, MulherNova, MulherVelha, res1, res2
+
+        idadeHomem1 = Number(prompt("Idade Homem1"))
+        idadeHomem2 = Number(prompt("Idade Homem2"))
+        idadeMulher1 = Number(prompt("Idade Mulher1"))
+        idadeMulher2 = Number(prompt("Idade Mulher2"))
+
+        if (idadeHomem1 < idadeHomem2){
+            HomemVelho = idadeHomem2
+            HomemNovo = idadeHomem1
+        }
+        else{
+            HomemVelho = idadeHomem1
+            HomemNovo = idadeHomem2
+        }
+
+        if (idadeMulher1 < idadeMulher2){
+            MulherVelha = idadeMulher2
+            MulherNova = idadeMulher1
+        }else{
+            MulherVelha = idadeMulher1
+            MulherNova = idadeMulher2
+        }
+
+        alert(`A mulher velha tem ${MulherVelha} de idade, a nova tem ${MulherNova} de idade`)
+        alert(`O homem velho tem ${HomemVelho} de idade, e o novo tem ${HomemNovo} de idade`)
+
+        res1 = MulherNova + HomemVelho
+        res2 = MulherVelha + HomemNovo
+
+        alert(`CALCULOS: Homem mais velho + Mulher mais nova = ${res1}. Homem mais novo + Mulher mais velha = ${res2}`)
+        
+   </script>
+</body>
+</html>
