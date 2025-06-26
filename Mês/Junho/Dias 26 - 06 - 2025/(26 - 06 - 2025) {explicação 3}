@@ -1,0 +1,91 @@
+let botaoFinal = document.getElementById ("botaoFinal")
+const proximaQuestao = document.getElementById("botaoProximo")
+const botaoJogar = document.getElementById("botaoJogar");
+const diviniciojogo = document.getElementById("iniciojogo");
+const caixaUniQuizDiv = document.getElementById("caixaUniQuiz");
+const divtextopergunta = document.getElementById("textoperguntas");
+const divFinal = document.getElementById ("divFinal")
+
+let indicePerguntas = 0;
+
+let respostasCorretas = 0
+
+botaoJogar.addEventListener ("mousemove", iniciarjogo) //escuta o eventos "click", e inicia o jogo
+proximaQuestao.addEventListener ("mousemove", carregarProximaQuestao) //escuta os eventos click e começa a proxima fase
+
+// Arrays
+const perguntasQuiz = [ 
+     {pergunta:"Qual é o maior deserto do mundo?", opcoes:["Saara", "Antartida", "praia de torres"], resposta:"Antartida"},
+     {pergunta: "Qual é a capital do Brasil?", opcoes:["RJ", "SP","Brasilia"],resposta:"Brasilia"},
+     {pergunta: "Qual é a capital da Austrália?", opcoes:["Palhoça","Urubici", "Canguru"],resposta:"Canguru"},
+     {pergunta: "Qual é o país com maior população no mundo?", opcoes:["China", "India", "Japão"],resposta:"India"},
+     {pergunta: " Qual a linha imaginária que atravessa o Brasil?", opcoes:["Sonho", "equador","capricornio"],resposta:"Equador"},
+     {pergunta: "Qual o oceano que banha o Brasil?", opcoes:["Atlântico", "Indico", "Pacifíco"],resposta:"Atlântico"},
+];
+
+
+function iniciarjogo() {
+    diviniciojogo.innerHTML = ""
+    carregarQuestao(perguntasQuiz[indicePerguntas]);
+    
+}
+
+function carregarQuestao(questao) {
+
+    // tornando a DIV das questões visível
+      caixaUniQuizDiv.classList.add("active");
+
+    //criação do botão
+         proximaQuestao.disabled = true //desabilitando o botao
+        divtextopergunta.textContent = questao.pergunta
+        opcoesRespostas.innerHTML = "" // para não aparecer tantos quadros de respostas
+        questao.opcoes.forEach(opcao => {
+        const botao = document.createElement("button"); //criação do botão        
+        botao.textContent = opcao; //opções que o user tem q clicar
+        botao.classList.add("answer-btn"); //adicio a clas answer-btn
+        botao.addEventListener("click", () => validarresposta(opcao)); //ele escuta quando clica
+        opcoesRespostas.appendChild(botao); //ele vai adicionando os botões no html
+   });
+}
+function validarresposta(respostaSelecionada){ 
+//mostrar a resposta correta em cor destacada
+const botoesopcoes = document.querySelectorAll(".answer-btn") //seleciona todos os botões para ver se são corretas ou erradas
+botoesopcoes.forEach(botao2 => {
+
+
+    //se a rsposta for correta, ele recebe a classe "correct", senão ele receberá a classe "incorrect"
+
+    if(botao2.textContent==perguntasQuiz[indicePerguntas].resposta){ //está puxando as questões do array
+    botao2.classList.add("correct")
+}
+if (botao2.textContent === respostaSelecionada && respostaSelecionada != perguntasQuiz[indicePerguntas].resposta){
+    botao2.classList.add ("incorrect")
+}
+    botao2.disabled = true
+    proximaQuestao.disabled = true
+})
+
+
+
+    if(respostaSelecionada == perguntasQuiz[indicePerguntas].resposta){
+        respostasCorretas++
+    }
+
+    proximaQuestao.disabled = false
+
+
+
+}
+function carregarProximaQuestao(){
+    indicePerguntas++;
+    if(indicePerguntas < perguntasQuiz.length)
+        carregarQuestao(perguntasQuiz[indicePerguntas]);
+    else
+    alert(`voce acertou ${respostasCorretas} ao total`)
+    caixaUniQuizDiv.classList.add ("remove")
+}
+
+function divFinal(){
+
+
+}
