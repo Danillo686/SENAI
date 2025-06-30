@@ -1,0 +1,25 @@
+#Cabecalho{
+    background-color: rgb(208, 176, 238);
+    text-align: center;
+    height: 50px;
+}
+
+#Content{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Botão{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#Contador{
+    text-align: center;
+}
+
+#Botão:hover{
+    background-color: antiquewhite;
+}
