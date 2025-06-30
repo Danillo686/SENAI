@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <div id="Cabecalho"> Cabecalho </div>
+
+    <div id="Caixa">
+        <p id="Content"> Contéudo Principal Aqui! </p>
+        <button id="Botão" onclick="Clique()">Clique para +1</button>
+        <br>
+        <div id="Contador">0</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
