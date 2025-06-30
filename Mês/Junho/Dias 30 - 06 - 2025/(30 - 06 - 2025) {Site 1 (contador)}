@@ -1,0 +1,11 @@
+//Script
+
+let total = document.getElementById ("Contador")
+var botão = document.getElementById ("Botão") //puxando eles
+contador = 0; //contador tem que ter um resultado para poder ser somado
+
+function Clique(){
+    contador += 1; //contador somando 1+1, etc
+
+    total.innerHTML = contador //mostrando os números
+}
