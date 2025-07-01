@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+    background-color: black;
+}
+
+#login{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#Entrar {
+    background-color: rgb(11, 182, 188);
+    border: none;
+    width: 21%;
+    border-radius: 2px;
+    padding: 6px;
+    color: white;
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+
+#Entrar:hover {
+    background-color: rgb(55, 160, 164);
+}
+.user {
+    width: 20%;
+    border-radius: 2px;
+    margin-top: 17px;
+    padding: 8px;
+    border: none;
+}
+
+#Cabeca {
+    color:white;
+    text-align: center; 
+    margin-bottom: 350px;
+}
+
+#dados {
+    color:rgba(255, 255, 255, 0.715)
+}
+
+#Esqueçeu {
+    text-decoration: none; color: white;
+}
+
+#Final {
+    text-align: center;
+    margin-top: 140px;
+}
+
+#criarConta {
+    color: rgba(255, 255, 255, 0.715)
+}
+
+#cadastro{
+    text-decoration: none; color: white;
+}
+
+#LogoFalsa {
+    color: white;
+    text-align: center;
+    margin-top: -70px;
+}
+
+.senhas{
+    width: 20%;
+    border-radius: 2px;
+    margin-top: 17px;
+    padding: 8px;
+    border: none;
+}
+    </style>
+</head>
+
+<body>
+    <div id="Fundo">
+        <p id="Cabeca">Português (Brasil)</p>
+        <h1 id="LogoFalsa">Instagram</h1>
+            <div id="login">
+                <input type="text" class="user" placeholder="Número de telefone, email ou nome de usuário" required>
+                <br>
+                <input type="text" placeholder="Senha" class="senhas" required>
+                <br>
+                <button id="Entrar">Entrar</button>
+                <p id="dados">Esqueçeu seus dados de login? <a href="" id="Esqueçeu">Obtenha ajuda para entrar.</a></p>
+            </div>
+        
+    </div>
+
+    <footer id="Final">
+        <p id="criarConta">Não tem uma conta?<a href="" id="cadastro">Cadastra-se</a></p>
+    </footer>
+</body>
+</html>
+
+//imagem//
+"https://static.vecteezy.com/system/resources/previews/023/741/148/non_2x/instagram-logo-icon-social-media-icon-free-png.png"*/
