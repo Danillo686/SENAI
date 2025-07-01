@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="C.css">
+</head>
+<body>
+    <header>
+        <h1 id="Cabecalho">Cácluco Soma</h1>
+        <hr>
+        <section>
+            <div id="Box">
+                <p>
+                    Valor 1: <br>
+                    <input type="number" id="entrada1">
+                </p>
+                <p>
+                    Valor 2: <br>
+                    <input type="number" id="entrada2">
+                </p>
+                <p>
+                    <input type="button" value="Somar" id="Botão" onclick="Calcular()">
+                </p>
+            </div>
+            <hr>
+            Resultado:
+            <div id="Resultado"> . . . </div>
+            <hr>
+            <script src="B.js"></script>
+        </section>
+    </header>
+</body>
+</html>
