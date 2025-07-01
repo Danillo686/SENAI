@@ -1,0 +1,10 @@
+let num1 = document.getElementById ("entrada1")
+let num2 = document.getElementById ("entrada2")
+let conta
+let result = document.getElementById ("Resultado")
+
+
+function Calcular(){
+    conta = Number(num1.value) + Number(num2.value)
+    result.innerHTML = `Seu Resultado é ${conta}`
+}
