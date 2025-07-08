@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //tabuleiro tem 8x8
+   var system = 2
+   var result
+   var quadrado = 0
+   
+
+    for (let i = 0; i <=63; i ++){
+
+        result = system ** i
+        quadrado++
+        alert (`valor: ${result} Quadrado: ${quadrado}`)
+        //result é o número que queremos dobrar
+    }
+   </script> 
+</body>
+</html>
