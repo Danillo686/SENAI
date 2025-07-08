@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numb = Number(prompt("Escolha um número "))
+        var segura = numb
+        alert (`Vamos contar 10x os multiplos de ${numb}`)
+        for (i = 1 ; i <= 9; i++){
+            segura = numb + segura
+            result = segura + numb
+            
+            alert (`Contando... ${result}`)
+            
+        }
+    </script>
+</body>
+</html>
