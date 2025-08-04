@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #entradas {
+    margin: 10px;
+    padding: 5px;
+    width: 30%;
+    border-style: solid;
+    border-color: white;
+    background: none;
+    color:rgb(255, 255, 255);
+    font
+}
+
+body {
+    background-image: url(free-photo-of-mar-natureza-por-do-sol-chao.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+  
+#caixa {
+    text-align: right;
+    margin-top: 30%;
+}
+
+::placeholder {
+    color: white;
+}
+
+#but {
+    width: 31%;
+    margin: 10px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+    </style>
+</head>
+<body>
+    <!-- NOME, SENHA, ENTRAR--> 
+     <div id="caixa">
+        <input type="text" placeholder="Coloque seu Email ou Número de telefone" id="entradas">
+        <br>
+        <input type="text" placeholder="Coloque sua senha" id="entradas">
+        <br>
+        <button id="but">Checar</button>
+    </div>
+</body>
+</html>
