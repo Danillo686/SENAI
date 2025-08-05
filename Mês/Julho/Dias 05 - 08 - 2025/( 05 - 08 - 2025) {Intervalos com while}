@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--A fábrica de refrigerantes Meia-Cola vende seu produto em três formatos: lata de
+350 ml, garrafa de 600 ml e garrafa de 2 litros. Se um comerciante compra uma
+determinada quantidade de cada formato, faça um algoritmo para calcular quantos
+litros de refrigerante ele comprou. -->
+
+    <script>
+        var i = 0, numb, result
+        var contador1 = 0
+        var contador2 = 0
+        var contador3 = 0
+        var contador4 = 0
+
+        while (i < 5){
+        i++
+            numb = Number(prompt("COLOQUE SEUS 10 NÚMEOS AQUI")
+            )
+
+            if (numb >= 0 && numb <= 25 ){
+                contador1++
+            }else if (numb >= 26 && numb <= 50){
+                contador2++
+            }else if (numb >= 51 && numb <= 75){
+                contador3++
+            }else if (numb >= 76 && numb <= 100){
+                contador4++
+            }else{
+                alert ("VALOR INCORRETO")
+            }
+            
+        }
+
+        alert (`CONTADOR 1 (0-25) TOTAL = ${contador1}`)
+        alert (`CONTADOR 2 (26-50) TOTAL = ${contador2}`)
+        alert (`CONTADOR 3 (51-75) TOTAL = ${contador3}`)
+        alert (`CONTADOR 4 (76-100) TOTAL = ${contador4}`)
+    </script>
+</body>
+</html>
