@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var numb, contador, i = 0
+
+        while (i < 200){
+        i++
+
+        numb = Number(prompt(`Números de 0-200  contador:${i}`))
+            if (numb >= 100 && numb >= 200){
+                contador++
+            }else if (numb == 0){
+                alert ("Número errado, resetando o código...")
+                i = 200
+            }
+        }
+    </script>
+</body>
+</html>
