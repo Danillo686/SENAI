@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var escolha
+        var Opcao = 0
+
+
+        escolha = prompt("escolha o seu rémedio")
+        escolha = escolha.trim().toLowerCase() //Normalizando e tirando espaços extras
+        var medicamentos = [
+            {nome: "Dipirona", preço: "12,00", uso: "comum"},
+            {nome: "Fluoxetina", preço: "25,00", uso: "controlado"},
+            {nome: "Testosterona", preço: "45,00", uso: "controlado"},
+            {nome: "Losartana", preço: "32,00", uso: "comum"}
+        ]
+        
+
+        for (let i = 0; i < medicamentos.length; i++) {
+    if (medicamentos[i].nome.toLowerCase() === escolha) {
+        alert(`Medicamento: ${medicamentos[i].nome}\nPreço: R$${medicamentos[i].preço}\nUso: ${medicamentos[i].uso}`);
+        encontrado = true;
+        break;
+    }
+}
+
+    let encontrado = false;
+
+    if (!encontrado) {
+        alert("Medicamento não encontrado");
+}
+    </script>
+</body>
+</html>
