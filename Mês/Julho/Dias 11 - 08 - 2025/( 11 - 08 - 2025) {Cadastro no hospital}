@@ -1,0 +1,10 @@
+        var idade,  sintomas
+        const sintomasPrioritarios = ["febre", "dores de cabeça", "cansaço"]
+        idade = Number(prompt("Coloque a idade aqui:"))
+        sintomas = prompt("Coloque o sintomas aqui:").toLowerCase().trim()
+
+        if (sintomasPrioritarios.includes(sintomas) || idade >= 60) {
+            alert("iremos cuidar de seus sintomas, você é prioritário")
+        }else{
+            alert ("você não é prioritário")
+        }
