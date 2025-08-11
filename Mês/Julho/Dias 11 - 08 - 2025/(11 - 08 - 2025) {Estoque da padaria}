@@ -1,0 +1,15 @@
+        var QuantidadeDePães
+        QuantidadeDePães = Number(prompt("Quantidade de pães"))
+
+        if (QuantidadeDePães < 100){
+            while (QuantidadeDePães <= 99){
+                QuantidadeDePães++
+                alert(QuantidadeDePães)
+
+                if (QuantidadeDePães == 100){
+                    alert("Pronto, você fez 100 pães!!")
+                }
+            }
+        }else if (QuantidadeDePães == 100){
+            alert("100 Pães feitos!!!!")
+        }
