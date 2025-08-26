@@ -1,0 +1,55 @@
+// C++ code
+//
+
+const int Pino1 = 13;//vermlho p1
+const int Pino2 = 12;// amarelo p1
+const int Pino3 = 11;// verde p1
+
+const int Pino4 = 5; //vermelho p2
+const int Pino5 = 4; //amarelo p2
+const int Pino6 = 3; //verde p2
+void setup()
+{
+  pinMode(Pino1, OUTPUT);
+  pinMode(Pino2, OUTPUT);
+  pinMode(Pino3, OUTPUT);
+  pinMode(Pino4, OUTPUT);
+  pinMode(Pino5, OUTPUT);
+  pinMode(Pino6, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(Pino1, HIGH);// vermelho e o ultimo pino verde iniciam ligados
+  digitalWrite(Pino6, HIGH);
+  delay(500);
+  
+  digitalWrite(Pino6, LOW); //pino verde desliga
+  delay(500);
+ 
+  digitalWrite(Pino5, HIGH); // pino amarelo liga, o vermelho ainda está ligado
+  delay(500);
+  
+  digitalWrite(Pino5, LOW); // vermelho e amarelo desligam
+  digitalWrite(Pino1, LOW);
+  delay(500); 
+  
+  digitalWrite(Pino4, HIGH); //vermelho e verde ligam
+  digitalWrite(Pino3, HIGH);
+  delay(500);
+  
+  digitalWrite(Pino3, LOW); //verde desliga
+  delay(500);
+  
+  digitalWrite(Pino2, HIGH); // amarelo liga
+  delay(500);
+    
+  digitalWrite(Pino2, LOW); // amarelo desliga
+  delay(500);
+  
+  digitalWrite(Pino4, LOW); // vermelho desliga
+  delay(500);
+}
+
+
+link do projeto: https://www.tinkercad.com/things/jNRM7FZ6rRW/editel?returnTo=%2Fdashboard
